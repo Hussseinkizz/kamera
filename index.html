@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamera</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+  <script src="./kamera.js" defer></script>
+</head>
+
+<body>
+  <section class="main-wrapper">
+    <div id="cameraView" class="app-container camera">
+      <video id="video" class="camera-text">Video stream not available!</video>
+      <!-- The Controls -->
+      <div class="camera-control-area">
+        <button id="cameraButton" class="camera-button pulse"></button>
+        <div id="photosButton" class="photos-button">
+          <img id="PreviewPhoto" src="./flower.jpeg" class="preview-photo" alt="preview!" />
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal" class="modal is-hidden">
+      <div class="modal-body">
+        <div class="modal-header">
+          <span class="heading-bold">🟣 Kamera Photos</span>
+          <button id="closeButton">✖️</button>
+        </div>
+        <canvas id="canvas" class="is-hidden"> </canvas>
+        <div id="photosGrid" class="modal-content grid">
+          <h1 class="foo">
+            🙄 Nothing Yet!
+          </h1>
+        </div>
+        <div id="imagesCount" class="modal-footer">
+          First Take Some Shots!
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
